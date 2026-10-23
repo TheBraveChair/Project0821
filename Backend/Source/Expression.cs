@@ -343,7 +343,6 @@ primary        := number | string | true | false | identifier | "(" expression "
         private Dictionary<string, decimal> dvalue = new();
         private Dictionary<string, long> fieldId = new();
         private Node expr = null!;
-        // 替换 Expression.cs 中 Environment 类的这两个方法
         public void SetValue(string key, decimal value, long fieldId) {
             if (fieldId != 0) {
                 dvalue[key] = value;
